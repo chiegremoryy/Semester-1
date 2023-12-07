@@ -1,0 +1,68 @@
+
+html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    margin: 0;
+    grid-column: 1 / 3;
+    display: block;
+    grid-template-columns: min-content 3fr;
+    font-family: 'Tw Cen MT';
+    font-size: 50px;
+    text-align: center;
+  }
+
+  header {
+    font-family: 'HolidayFree';
+    font-size: 20pt;
+    grid-column: 1 / 3;
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 0.1rem;
+    color: #4f4f4f;
+  }
+
+  div {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-family: 'Tw Cen MT';
+    font-size: 90px;
+    text-align: center;
+  }
+
+  h4 {
+    font-family: 'HolidayFree';
+    font-size: 30px;
+    text-align: left;
+  }
+
+  img {
+    margin: auto;
+  }
+  
+  a {
+    font-family: 'HolidayFree';
+    font-size: 10pt;
+    padding-bottom: 5pt;
+    font-size: medium;
+    margin-bottom: 5pt;
+  }
+
+  footer {
+    font-family: 'HolidayFree';
+    grid-column: 1 / 3;
+    background: #4f4f4f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: small;
+  }
+ 

@@ -1,0 +1,25 @@
+function all(){
+    table.innerHTML = ``
+    contactList = JSON.parse(localStorage.getItem('listItem')) ?? []
+    contactList.forEach(function (value, i){
+       
+        var table = document.getElementById('table')
+
+        table.innerHTML += `
+            <tr>
+                <td>${i+1}</td>
+                <td>${value.nama}</td>
+                <td>${value.jumlah}</td>
+                <td>
+                    <button class="btn btn-sm btn-success" onclick="edit(${value.id})">
+                        <i class="fa fa-edit"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-danger" onclick="remove(${value.id})">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </td>
+            </tr>`
+    })
+}
